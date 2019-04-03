@@ -1,74 +1,3 @@
-/*--------- Contents -----------
-
-1. Reset css
-2. Navbar Styling
-3. Hero Section Styling
-4. About section 
-5. Features section Styling
-6. video Feature Styling 
-7. Counter Section
-8. Review Section
-9. Pricing Section
-10. Subscription FOrm
-11. Faq Section
-12. Footer Styling 
-13. All media queries
--------------------------------*/
-
-/*----- 1. Reset.css -----*/
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/* --- Common Styles ---*/
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat';
   font-size: 16px;
@@ -420,10 +349,6 @@ body {
 	margin: 0 auto;
 }
 
-.home-3 .hero-inner {
-	margin-top: 50px;
-}
-
 .home-3 .hero-inner img {
 	transform: translateX(0);
 	max-width: 100%;
@@ -440,7 +365,6 @@ body {
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
-
 
 .home-3 h1 {
 	font-size: 28px;
@@ -490,7 +414,6 @@ body {
 .btn-action:focus {
 	color: #FFFFFF;
 }
-
 
 /*------------ Home 4 Styling Starts ----------------*/
 
@@ -1410,12 +1333,6 @@ body {
 	}
 }
 
-/* -----  Section Styling Ends Here -----*/
-
-
-
-
-
 /*-------------------------------------------------------
 -------------- 11. Subscription Form Styling ----------------
 -------------------------------------------------------*/
@@ -1563,12 +1480,6 @@ body {
 	line-height: 1.2;
 }
 
-.faq .faq-intro p {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.4;
-}
-
 .faq h2 {
 	font-size: 15px;
 	font-weight: 500;
@@ -1592,83 +1503,6 @@ body {
 	padding: 20px 20px 50px 20px;
 }
 
-/*---------------------------------------------------
------------ 13. Contact Section Styling Starts -------------
----------------------------------------------------*/
-
-.contact {
-	width: 100%;
-	height: 100%;
-	padding: 100px 0 0 0;
-}
-
-.contact .inner h1 {
-	font-family: 'Roboto';
-	font-size: 34px;
-	font-weight: 300;
-	color: #252525;
-	line-height: 1.2;
-	margin-bottom: 20px;
-}
-
-.contact .inner p {
-	font-family: 'Roboto';
-	font-size: 16px;
-	font-weight: 300;
-	color: #848484;
-	line-height: 1.4;
-}
-
-.contact .address {
-	padding: 10px 0 100px 0;
-}
-
-.contact .address h1 {
-	font-family: 'Roboto';
-	font-size: 24px;
-	color: #454545;
-	margin-bottom: 30px;
-}
-
-.contact .address p {
-	font-family: 'Roboto';
-	font-size: 21px;
-	color: #454545;
-	line-height: 1.8;
-}
-
-.contact .address p:nth-child(3) {
-	margin-top: 30px;
-}
-
-.contact .address p:nth-child(5) {
-	margin-top: 30px;
-}
-
-/* ------------ Contact Form Styling --------*/
-
-.contact {
-	padding: 100px 0 100px 0;
-	background: #FFF;
-}
-
-.contact-intro h1 {
-	font-family: 'Montserrat';
-	font-size: 34px;
-	font-weight: 300;
-	line-height: 1.2;
-}
-
-.contact-intro p {
-	font-size: 14px;
-	line-height: 1.6;
-	margin-top: 20px;
-}
-
-.contact-form {
-	padding-top: 100px;
-}
-
 label {
 	display: block;
 	font-family: 'Montserrat';
@@ -1676,21 +1510,6 @@ label {
   font-weight: 400;
   color: #252525;
 	text-align: left;
-}
-
- .contact-form .form-control {
-	 border: none;
-  border-bottom: 2px solid #d0e1fb;
-  border-radius: 1px;
-  margin-top: 10px;
-  background: #F9F9F9;
-  margin-bottom: 40px;
-  /*border-bottom: 1px solid #999999;*/
-  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
-  box-shadow: inset 0 0px 0px rgba(0,0,0,0);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-    transition: 0.5s;
 }
 
 .form-control:focus {
@@ -1773,10 +1592,6 @@ textarea.form-control {
 	font-size: 12px;
 	color: #FF3333;
 }
-
-/* -------- Contact Section Styling Ends ---- */
-
-
 
 /*-----------------------------------------------------------
 ------------ App Features Styling Starts ---------------
@@ -1933,8 +1748,7 @@ text-align: center;
 	font-family: 'Montserrat';
 	font-size: 13px;
 	letter-spacing: 0;
-	color: #364655;
-	color: #D8D8D8;
+	color: #fff;
 	line-height: 1.6;
 }
 
