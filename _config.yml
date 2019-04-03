@@ -3,11 +3,12 @@ author: Daniel Lockyer
 url: https://sewsapp.com
 description: Server Early Warning System
 permalink: pretty
+twitter:
+  username: daniellockyer
 author:
   name: Daniel Lockyer
   email: hi@daniellockyer.com
   twitter: DanielLockyer
-
 defaults:
   -
     scope:
