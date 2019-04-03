@@ -13,7 +13,7 @@
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
         <style>
             h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; font-size: 16px; }
             p { font-family: 'Montserrat';font-size: 14px}
@@ -83,9 +83,6 @@
                 margin-top: 5px;
             }
 
-
-            /*------ 2. Navbar Styling ------*/
-
             .navbar {
                 font-family: "Montserrat";
                 padding-top: 25px;
@@ -149,7 +146,6 @@
             }
 
             @media only screen and (max-width: 768px) {
-
                 .navbar {
                     background: rgba(255, 255, 255, 0.99) !important;
                     padding-top: 10px;
@@ -164,32 +160,9 @@
             }
 
             @media only screen and (min-width: 240px) {
-                .navbar.past-main {
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    background-color: rgba(255, 255, 255, 0.99) !important;
-                    -webkit-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
-                    -moz-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
-                    box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
-                }
-
                 .navbar.effect-main {
                     -webkit-transition: all 0.3s;
                     transition: all 0.3s;
-                }
-
-
-                .nav-white.past-main .nav-item .nav-link {
-                    color: #4957B8;
-                    font-weight: 500;
-                }
-
-                .navbar.past-main .nav-item .nav-link {
-                    font-weight: 500;
-                }
-
-                .nav-white.past-main .navbar-brand {
-                    color: #4957B8;
                 }
 
                 .nav-white.effect-main {
@@ -202,93 +175,6 @@
                     margin-left: auto !important;
                     margin-right: auto !important;
                 }
-
-                .home-2 h4 {
-                    font-family: 'Open Sans';
-                    font-size: 12px;
-                    font-weight: 500;
-                    color: #b2bcc1;
-                    text-transform: uppercase;
-                    line-height: 1.2;
-                    letter-spacing: 2px;
-                    margin-bottom: 20px;
-                }
-
-                .home-2 img {
-                    margin-top: 50px;
-                }
-
-                .home-2 h1 {
-                    font-size: 28px;
-                    font-weight: 700;
-                    color: #364655;
-                    color: #FFF;
-                    line-height: 1.2;
-                    letter-spacing: -1px;
-                }
-
-                .home-2 p {
-                    font-size: 14px;
-                    font-weight: 300;
-                    color: #627382;
-                    color: #FFF;
-                    line-height: 1.6;
-                    letter-spacing: 1px;
-                    margin-top: 20px;
-                }
-
-                .home-2 {
-                    padding: 100px 0 50px 0 !important;
-                    background: #2e7eed;
-                }
-
-                .home-2 .hero-content {
-                    text-align: center;
-                }
-
-                .hero-split {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-flex-direction: column;
-                    flex-direction: column;
-                }
-
-                .hero-split .hero-left {
-                    flex: 1 0 50%;
-                    background: #F3F3F3;
-                    order: 2;
-                }
-
-                .hero-split .hero-left {
-                    padding: 150px 25px 50px 25px;
-                    text-align: center;
-                }
-
-                .hero-split .hero-right {
-                    flex: 1 0 50%;
-                    background: url(../images/debut.png) no-repeat center center;
-                    background-size: cover;
-                    min-height: 100vh;
-                    order: 1;
-                }
-
-                .home-2 .intro-block {
-                    padding: 15px;
-                }
-
-                .home-2 .subform {
-                    padding-top: 50px;
-                }
-
-
-                .home-2 .hero-split {
-                    width: 100%;
-                }
-
-                /*------------ Home-3 Styling ---------------*/
 
                 .home-3 {
                     padding: 150px 0 0 0;
@@ -370,91 +256,6 @@
                     color: #FFFFFF;
                 }
 
-                .home-4 {
-                    background: #FFFFFF;
-                    padding: 100px 0 100px 0;
-                }
-
-                .home-4 .app-content-block {
-                }
-
-                .home-4 .app-content-block h1 {
-                    font-size: 28px;
-                    font-weight: 600;
-                    color: #364655;
-                    line-height: 1.2;
-                }
-
-                .home-4 .app-content-block p {
-                    font-size: 14px;
-                    line-height: 1.6;
-                    color: #627382;
-                    letter-spacing: 1px;
-                    margin-top: 20px;
-                    margin-bottom: 30px;
-                }
-
-                .home-4 .app-content-block h4 {
-                    font-family: 'Open Sans';
-                    font-size: 12px;
-                    font-weight: 500;
-                    color: #627382;
-                    text-transform: uppercase;
-                    line-height: 1.2;
-                    letter-spacing: 2px;
-                    margin-bottom: 20px;
-                }
-
-
-                .home-4 .app-btn img {
-                    margin: 10px 15px 0 0;
-                }
-
-                .about {
-                    padding: 100px 0 100px 0;
-                }
-
-                .about-intro {
-                    padding: 0 0 50px 0;
-                }
-
-                .about-intro h1 {
-                    font-size: 28px;
-                    font-weight: 300;
-                    line-height: 1.3;
-                    margin-bottom: 20px;
-                }
-
-                .about-intro p {
-                    font-size: 16px;
-                    font-weight: 300;
-                    color: #768676;
-                    line-height: 1.6;
-                }
-
-                .about-img {
-                    border-radius: 15px;
-                    background: transparent;
-                }
-
-                .about-img img {
-                    border-radius: 15px;
-                    -webkit-filter: grayscale(20%);
-                    filter: grayscale(20%);
-                    box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
-                }
-
-
-                .about-txt-inner {
-                    padding: 25px 0 25px 0;
-                    margin-top: 25px;
-                    cursor: pointer;
-                }
-
-                .about-txt-inner:hover {
-                    background: #f2f4f7;
-                }
-
                 .num {
                     display: inline-block;
                     height: 47px;
@@ -467,17 +268,6 @@
                     color: #fff;
                     padding-top: 12px;
                     font-weight: 600;
-                }
-
-                .about-txt p {
-                    font-size: 15px;
-                    line-height: 1.4;
-                    color: #364655;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    max-width: 250px;
-                    margin-right: auto;
-                    margin-left: auto;
                 }
 
                 .features {
@@ -531,12 +321,6 @@
                     background-color: transparent;
                 }
 
-
-
-                /*---------------------------------------------------------------
-                  ------------- Boxed Features Styling Starts Here ----------------
-                  ---------------------------------------------------------------*/
-
                 .feature-single {
                     padding: 6em 0;
                 }
@@ -571,104 +355,6 @@
                     opacity: 0.9;
                 }
 
-
-
-                /*------------------------------------------------------
-                  ----------------- Product Tour Styling -----------------
-                  ------------------------------------------------------*/
-
-
-                .product-tour {
-                    padding: 100px 0 100px 0;
-                    overflow: hidden;
-                }
-
-                .product-tour .tour-intro {
-                    padding: 10px;
-                }
-
-                .product-tour .tour-intro h1 {
-                    font-size: 28px;
-                    font-weight: 500;
-                    color: #364655;
-                    line-height: 1.2;
-                    margin-bottom: 15px;
-                }
-
-                .product-tour .tour-intro p {
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 1.6;
-                    color: #898989;
-                }
-
-                .product-tour .tour-img {
-                    transform: translateX(0);
-                }
-
-                .tour-list  {
-                    padding-top: 0;
-                    overflow: hidden;
-                }
-
-                .tour-list ul {
-                    list-style-type: none;
-                    overflow: hidden;
-                }
-
-                .tour-list ul li {
-                    margin-bottom: 30px;
-                    overflow: hidden;
-                }
-
-                .product-tour .tour-icon {
-                    float: left;
-                    width: 20%;
-                }
-
-                .product-tour .tour-text {
-                    float: right;
-                    width: 80%;
-                }
-
-                .product-tour .tour-text h3 {
-                    font-size: 21px;
-                    font-weight: 500;
-                    line-height: 1.2;
-                    margin-bottom: 10px;
-                }
-
-                .product-tour .tour-text p {
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 1.6;
-                    color: #444444;
-                }
-
-
-                /*--------------- App Feature Styling --------------------*/
-
-
-                .app-feature {
-                    padding: 100px 0 100px 0;
-                    background: #f2f2f2;
-                }
-
-                .app-feature-content h1 {
-                    font-size: 28px;
-                    font-weight: 500;
-                    line-height: 1.2;
-                    margin-bottom: 20px;
-                }
-
-                .app-feature-content p {
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #7c7e80;
-                    line-height: 1.4;
-                    margin-bottom: 20px;
-                }
-
                 .flex-split .f-right img {
                     margin-top: 0;
                 }
@@ -701,192 +387,10 @@
                     border-color: #FFF;
                 }
 
-
                 .section-r {
                     padding: 100px 0 50px 0;
                     background: #eef2f5;
                 }
-
-                .review-pitch {
-                    padding: 50px 10px 30px 10px;
-                }
-
-                .review-pitch h2 {
-                    font-size: 24px;
-                    font-weight: 600;
-                    line-height: 1.2;
-                    margin-bottom: 20px;
-                }
-
-                .review-pitch p {
-                    font-size: 15px;
-                    font-weight: 400;
-                    line-height: 1.4;
-                }
-
-                /*-------------- 8. Review Section Styling ------------*/
-
-                .review-section {
-                    padding: 0 0 0 0;
-                    box-shadow: 0px 5px 50px 0px rgba(0,0,0,.1);
-                    margin-bottom: 50px;
-                    border-radius: 10px;
-                }
-
-                .review-section .review-text {
-                    max-width: 75%;
-                    margin: 0 auto;
-                }
-
-                .review-section .review-text p {
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 1.6;
-                    letter-spacing: 0.5px;
-                    color: #627382;
-                    margin-bottom: 10px;
-                }
-
-                .review-section .review-text h3 {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: #364655;
-                    margin-bottom: 10px;
-                    margin-top: 20px;
-                }
-
-                .review-section .review-text h4 {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: #364655;
-                }
-
-                .review-single {
-                    text-align: center;
-                    padding: 75px 0 75px 0;
-                }
-
-                .review-single img {
-                    width: 80px !important;
-                    margin: 0 auto;
-                    margin-bottom: 20px;
-                }
-
-                .review-text .ion {
-                    display: inline-block;
-                    margin-top: 20px;
-                    font-size: 14px;
-                    color: #ff8000;
-                }
-
-                .owl-theme .owl-dots {
-                    display: none !important;
-                }
-
-                /*----------------------------------------------------------
-                  ------------------ 9. Cta Big Styling Starts ------------------
-                  ----------------------------------------------------------*/
-
-                .cta-big {
-                    background: url(../images/bg.jpg) no-repeat center center;
-                    background-size: cover;
-                    padding: 150px 0 150px 0;
-                }
-
-
-                .cta-big-inner h1 {
-                    font-weight: 500;
-                    font-size: 32px;
-                    color: #FFFFFF;
-                    line-height: 1.2;
-                }
-
-
-                .cta-big h4 {
-                    font-family: 'Open Sans';
-                    font-size: 12px;
-                    font-weight: 500;
-                    color: #FFF;
-                    text-transform: uppercase;
-                    line-height: 1.2;
-                    letter-spacing: 2px;
-                    margin-bottom: 20px;
-                }
-
-
-                .cta-big-inner p {
-                    font-weight: 400;
-                    font-size: 14px;
-                    color: #FFFFFF;
-                    line-height: 1.4;
-                    margin: 20px 0 0 0;
-                }
-
-
-
-                /*--------------------------------------------------
-                  ------------ 10. Pricing sm styling starts -------------
-                  ---------------------------------------------------*/
-
-                .pricing-sm {
-                    padding: 100px 0 100px 0;
-                }
-
-                .pricing-sm h1 {
-                    font-size: 34px;
-                    font-weight: 500;
-                    color: #364655;
-                    letter-spacing: -1px;
-                    margin-bottom: 50px;
-                }
-
-                .pricing-sm .plan {
-                    padding: 20px 0 20px 0;
-                }
-
-                .pricing-sm .plan h4 {
-                    font-size: 24px;
-                    font-weight: 500;
-                    color: #627382;
-                }
-
-                .pricing-sm .pricing-icon {
-                    padding: 30px 0 0 0;
-                }
-
-                .pricing-sm .price {
-                    font-size: 42px;
-                    font-family: 'Montserrat';
-                    margin: 30px 0 0 0;
-                    color: rgb(56, 126, 209);
-                }
-
-                .pricing-sm small {
-                    display: inline-block;
-                    font-family: 'Montserrat';
-                    font-size: 16px;
-                    margin: 10px 0 30px 0;
-                    color: rgb(56, 126, 209);
-                }
-
-                .pricing-sm .pricing-list {
-                    list-style-type: none;
-                }
-
-                .pricing-sm .pricing-list li {
-                    font-family: 'Montserrat';
-                    font-size: 15px;
-                    line-height: 1.2;
-                    margin-bottom: 10px;
-                    color: #627382;
-                }
-
-                .pricing-sm .btn-action {
-                    background: rgb(56, 126, 209);
-                    border-color: rgb(56, 126, 209);
-                }
-
-
 
                 /* ----- Pricing Tables Styling Starts ----- */
 
@@ -1066,15 +570,6 @@
                 }
 
                 @media only screen and (max-width: 767px) {
-
-                    .home-4 {
-                        text-align: center;
-                    }
-
-                    .home-4 .app-content-block {
-                        margin-bottom: 30px;
-                    }
-
                     .f-box-single {
                         margin-bottom: 1em;
                     }
@@ -1310,35 +805,6 @@
                     font-weight: 400;
                 }
 
-                .hero-split .hero-left {
-                    padding: 200px 20px 150px 20px;
-                }
-
-                .home-2 {
-                    padding: 150px 0 150px 0 !important;
-                }
-
-                .home-2 .col-sm-5 {
-                    -webkit-box-flex: 0;
-                    -webkit-flex: 0 0 50%;
-                    -ms-flex: 0 0 50%;
-                    flex: 0 0 50%;
-                    max-width: 50%;
-                }
-
-                .home-4 .col-sm-5 {
-                    -webkit-box-flex: 0;
-                    -webkit-flex: 0 0 50%;
-                    -ms-flex: 0 0 50%;
-                    flex: 0 0 50%;
-                    max-width: 50%;
-                }
-
-                .about-txt-inner {
-                    padding: 50px 0 50px 0;
-                    margin-top: 50px;
-                }
-
                 .features {
                     padding: 75px 0 75px 0;
                 }
@@ -1367,14 +833,6 @@
                     margin-bottom: 0;
                 }
 
-                .product-tour .tour-intro {
-                    padding: 0;
-                }
-
-                .product-tour .tour-img {
-                    transform: translateX(120px);
-                }
-
                 .home-3 {
                     text-align: left;
                 }
@@ -1396,19 +854,6 @@
                     margin-top: 0;
                 }
 
-                .home-4 {
-                    padding: 150px 0 100px 0;
-                }
-
-                .product-tour .tour-img {
-                    transform: translateX(0);
-                    max-width: 100%;
-                }
-
-                .about-intro h1 {
-                    font-size: 34px;
-                }
-
                 .flex-split .f-left h2 {
                     font-size: 28px;
                 }
@@ -1422,59 +867,9 @@
                 .clients img:hover {
                     opacity: 1.0;
                 }
-
-                .review-section ul {
-                    padding: 50px 50px 25px 50px;
-                    margin-top: 30px;
-                }
-
-                .review-section .review-img {
-                    float: left;
-                    width: 18%;
-                }
-
-                .cta-big-inner h1 {
-                    font-size: 42px;
-                }
             }
 
             @media only screen and (min-width: 1024px) {
-                .home-2 img {
-                    margin-top: 0;
-                }
-                .home-2 .hero-content {
-                    text-align: left;
-                }
-                .home-4 {
-                    padding: 100px 0 100px 0;
-                }
-
-                .hero-split {
-                    -webkit-flex-direction: row;
-                    flex-direction: row;
-                }
-
-                .hero-split .hero-left {
-                    order: 1;
-                }
-
-                .hero-split .hero-right {
-                    margin: 0;
-                    order: 2;
-                }
-
-                .home-4 .app-content-block h1 {
-                    font-size: 34px;
-                }
-
-                .product-tour .tour-intro h1 {
-                    font-size: 28px;
-                }
-
-                .product-tour .tour-img {
-                    max-width: 100%;
-                }
-
                 .home-3 .hero-inner img {
                     box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
                 }
@@ -1491,11 +886,6 @@
                     font-size: 34px;
                 }
 
-                .hero-split .hero-left {
-                    padding: 200px 80px 150px 80px;
-                    text-align: left;
-                }
-
                 .counter-section {
                     margin-bottom: 0;
                 }
@@ -1508,11 +898,6 @@
             }
 
             @media only screen and (max-width: 766px) {
-                .product-tour .tour-img {
-                    transform: translateX(0);
-                    max-width: 100%;
-                }
-
                 #email-error {
                     left: 25%;
                 }
