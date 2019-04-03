@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>{{ site.title }}</title>
-        {% seo %}
-        {% feed_meta %}
         <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="Label HTML Template, Label Startup Business Template, Startup Template">
+
+        {% seo %}
+        {% feed_meta %}
 
         <link rel="icon" href="https://twemoji.maxcdn.com/2/72x72/2699.png" type="image/x-icon" />
         <link rel="shortcut icon" href="https://twemoji.maxcdn.com/2/72x72/2699.png" type="image/x-icon" />
@@ -15,7 +15,1510 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-        <link href="assets/style.css" rel="stylesheet" type="text/css" media="all" />
+        <style>
+            h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; font-size: 16px; }
+            p { font-family: 'Montserrat';font-size: 14px}
+
+            html * {
+                text-rendering: optimizeLegibility !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            body {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            *, *:after, *:before {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .nopadding {
+                padding: 0;
+            }
+
+            .nomargin {
+                margin: 0 !important;
+            }
+
+            .custom-padding {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .bg-color {
+                background: #f8faff !important;
+            }
+
+            #loading {
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                position: fixed;
+                opacity: 1;
+                background-color: #F2F2F2;
+                z-index: 9999;
+                text-align: center;
+            }
+
+            #loading-image {
+                display: inline;
+                top: 40%;
+                position: relative;
+                z-index: 9999;
+            }
+
+            .error-message {
+                color: #FF3333;
+                font-family: "Montserrat";
+                margin-top: 5px;
+            }
+
+            .success-message {
+                color:#33cc33;
+                font-family: "Montserrat";
+                margin-top: 5px;
+            }
+
+
+            /*------ 2. Navbar Styling ------*/
+
+            .navbar {
+                font-family: "Montserrat";
+                padding-top: 25px;
+                padding-bottom: 25px;
+                background-color: transparent !important;
+                -webkit-transition: 0.5s all ease;
+                transition: 0.5s all ease;
+            }
+
+            .navbar .navbar-brand {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #563D7C;
+            }
+
+            .navbar .navbar-toggler {
+                border: none;
+            }
+
+            .navbar span.navbar-toggler-icon::before {
+                outline: none;
+            }
+
+            .navbar .navbar-toggler:focus {
+                outline: none;
+            }
+
+            .navbar-nav {
+                text-align: center;
+                margin-top: 15px;
+                -webkit-transition: 0.5s all ease; /* For Safari 3.1 to 6.0 */
+                transition: 0.5s all ease;
+            }
+
+            .navbar-nav .nav-item {
+                margin-right: 0;
+                margin-top: 1.5rem;
+                font-size: 0.85rem;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: #563D7C;
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                color: #563D7C;
+                font-weight: 500;
+            }
+
+            .nav-white .nav-item .nav-link {
+                font-size: 0.9rem;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+
+            .nav-white .nav-item .nav-link:hover {
+                color: #F1F1F1;
+            }
+
+            .nav-white .navbar-brand {
+                color: #FFFFFF;
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                .navbar {
+                    background: rgba(255, 255, 255, 0.99) !important;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                .nav-white .navbar-brand {
+                    color: #4957B8;
+                }
+                .nav-white .nav-item .nav-link {
+                    color: #4957B8;
+                }
+            }
+
+            @media only screen and (min-width: 240px) {
+                .navbar.past-main {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background-color: rgba(255, 255, 255, 0.99) !important;
+                    -webkit-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+                    -moz-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+                    box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+                }
+
+                .navbar.effect-main {
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+
+
+                .nav-white.past-main .nav-item .nav-link {
+                    color: #4957B8;
+                    font-weight: 500;
+                }
+
+                .navbar.past-main .nav-item .nav-link {
+                    font-weight: 500;
+                }
+
+                .nav-white.past-main .navbar-brand {
+                    color: #4957B8;
+                }
+
+                .nav-white.effect-main {
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+
+                .centered {
+                    float: none !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                }
+
+                .home-2 h4 {
+                    font-family: 'Open Sans';
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #b2bcc1;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    letter-spacing: 2px;
+                    margin-bottom: 20px;
+                }
+
+                .home-2 img {
+                    margin-top: 50px;
+                }
+
+                .home-2 h1 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: #364655;
+                    color: #FFF;
+                    line-height: 1.2;
+                    letter-spacing: -1px;
+                }
+
+                .home-2 p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #627382;
+                    color: #FFF;
+                    line-height: 1.6;
+                    letter-spacing: 1px;
+                    margin-top: 20px;
+                }
+
+                .home-2 {
+                    padding: 100px 0 50px 0 !important;
+                    background: #2e7eed;
+                }
+
+                .home-2 .hero-content {
+                    text-align: center;
+                }
+
+                .hero-split {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+
+                .hero-split .hero-left {
+                    flex: 1 0 50%;
+                    background: #F3F3F3;
+                    order: 2;
+                }
+
+                .hero-split .hero-left {
+                    padding: 150px 25px 50px 25px;
+                    text-align: center;
+                }
+
+                .hero-split .hero-right {
+                    flex: 1 0 50%;
+                    background: url(../images/debut.png) no-repeat center center;
+                    background-size: cover;
+                    min-height: 100vh;
+                    order: 1;
+                }
+
+                .home-2 .intro-block {
+                    padding: 15px;
+                }
+
+                .home-2 .subform {
+                    padding-top: 50px;
+                }
+
+
+                .home-2 .hero-split {
+                    width: 100%;
+                }
+
+                /*------------ Home-3 Styling ---------------*/
+
+                .home-3 {
+                    padding: 150px 0 0 0;
+                    background: #FFF;
+                    background-size: cover;
+                    overflow: hidden;
+                    text-align: center;
+                }
+
+                .home-3 .intro-block {
+                    padding: 0 0 0 0;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+
+                .home-3 .hero-inner img {
+                    transform: translateX(0);
+                    max-width: 100%;
+                    margin-top: 50px;
+                }
+
+                .home-3 h4 {
+                    font-family: 'Open Sans';
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #b2bcc1;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    letter-spacing: 2px;
+                    margin-bottom: 20px;
+                }
+
+                .home-3 h1 {
+                    font-size: 28px;
+                    font-weight: 300;
+                    color: #364655;
+                    line-height: 1.2;
+                    letter-spacing: 0;
+                }
+
+                .home-3 p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #627382;
+                    line-height: 1.6;
+                    letter-spacing: 1px;
+                    margin-top: 20px;
+                }
+
+                .btn-action {
+                    padding: 10px 24px;
+                    background: #6c63ff;
+                    border: 2px solid;
+                    border-color: #6c63ff;
+                    border-radius: 100px;
+                    box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #FFFFFF;
+                    margin: 25px 10px 0 0;
+                    -webkit-transition: 0.2s;
+                    -moz-transition: 0.2s;
+                    transition: 0.2s;
+                }
+
+                .btn-action:hover {
+                    color: #FFFFFF;
+                    border-color: #6c63ff;
+                    background: #6c63ff;
+                    -webkit-transform: translateY(-2px);
+                    -moz-transform: translateY(-2px);
+                    transform: translateY(-2px);
+                }
+
+                .btn-action:focus {
+                    color: #FFFFFF;
+                }
+
+                .home-4 {
+                    background: #FFFFFF;
+                    padding: 100px 0 100px 0;
+                }
+
+                .home-4 .app-content-block {
+                }
+
+                .home-4 .app-content-block h1 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #364655;
+                    line-height: 1.2;
+                }
+
+                .home-4 .app-content-block p {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    color: #627382;
+                    letter-spacing: 1px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+
+                .home-4 .app-content-block h4 {
+                    font-family: 'Open Sans';
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #627382;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    letter-spacing: 2px;
+                    margin-bottom: 20px;
+                }
+
+
+                .home-4 .app-btn img {
+                    margin: 10px 15px 0 0;
+                }
+
+                .about {
+                    padding: 100px 0 100px 0;
+                }
+
+                .about-intro {
+                    padding: 0 0 50px 0;
+                }
+
+                .about-intro h1 {
+                    font-size: 28px;
+                    font-weight: 300;
+                    line-height: 1.3;
+                    margin-bottom: 20px;
+                }
+
+                .about-intro p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #768676;
+                    line-height: 1.6;
+                }
+
+                .about-img {
+                    border-radius: 15px;
+                    background: transparent;
+                }
+
+                .about-img img {
+                    border-radius: 15px;
+                    -webkit-filter: grayscale(20%);
+                    filter: grayscale(20%);
+                    box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+                }
+
+
+                .about-txt-inner {
+                    padding: 25px 0 25px 0;
+                    margin-top: 25px;
+                    cursor: pointer;
+                }
+
+                .about-txt-inner:hover {
+                    background: #f2f4f7;
+                }
+
+                .num {
+                    display: inline-block;
+                    height: 47px;
+                    width: 47px;
+                    border-radius: 47px;
+                    background: gray;
+                    font-size: 24px;
+                    font-family: 'Montserrat';
+                    text-align: center;
+                    color: #fff;
+                    padding-top: 12px;
+                    font-weight: 600;
+                }
+
+                .about-txt p {
+                    font-size: 15px;
+                    line-height: 1.4;
+                    color: #364655;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    max-width: 250px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+                .features {
+                    padding: 0 0 50px 0;
+                }
+
+                .flex-split {
+                    padding: 25px 0 25px 0;
+                }
+
+                .features .row, .app-feature .row, .flex-split .row, .hero .row {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+
+                .align-center {
+                    -webkit-box-align: center!important;
+                    -webkit-align-items: center!important;
+                    -ms-flex-align: center!important;
+                    align-items: center!important;
+                }
+
+                .features .feature-img {
+                    margin-bottom: 50px;
+                }
+
+                .features .feature-content h2 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
+
+                .features .feature-content p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: #898989;
+                }
+
+                .features hr {
+                    margin: 3em auto;
+                    border-color: #FFF;
+                    background-color: transparent;
+                }
+
+
+
+                /*---------------------------------------------------------------
+                  ------------- Boxed Features Styling Starts Here ----------------
+                  ---------------------------------------------------------------*/
+
+                .feature-single {
+                    padding: 6em 0;
+                }
+
+                .feature-single .f-icon {
+                    margin-bottom: 0.5em;
+                }
+
+                .feature-single .feature-text h4 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 1em;
+                }
+
+                .feature-single .feature-text p {
+                    font-family: 'Varela Round';
+                    font-size: 17px;
+                    color: #767676;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    max-width: 80%;
+                    margin: 0 auto;
+                }
+
+                .boxed-blue {
+                    background: #387ed1;
+                    color: #FFFFFF !important;
+                }
+
+                .boxed-blue p {
+                    color: #FFFFFF !important;
+                    opacity: 0.9;
+                }
+
+
+
+                /*------------------------------------------------------
+                  ----------------- Product Tour Styling -----------------
+                  ------------------------------------------------------*/
+
+
+                .product-tour {
+                    padding: 100px 0 100px 0;
+                    overflow: hidden;
+                }
+
+                .product-tour .tour-intro {
+                    padding: 10px;
+                }
+
+                .product-tour .tour-intro h1 {
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: #364655;
+                    line-height: 1.2;
+                    margin-bottom: 15px;
+                }
+
+                .product-tour .tour-intro p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: #898989;
+                }
+
+                .product-tour .tour-img {
+                    transform: translateX(0);
+                }
+
+                .tour-list  {
+                    padding-top: 0;
+                    overflow: hidden;
+                }
+
+                .tour-list ul {
+                    list-style-type: none;
+                    overflow: hidden;
+                }
+
+                .tour-list ul li {
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                }
+
+                .product-tour .tour-icon {
+                    float: left;
+                    width: 20%;
+                }
+
+                .product-tour .tour-text {
+                    float: right;
+                    width: 80%;
+                }
+
+                .product-tour .tour-text h3 {
+                    font-size: 21px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin-bottom: 10px;
+                }
+
+                .product-tour .tour-text p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: #444444;
+                }
+
+
+                /*--------------- App Feature Styling --------------------*/
+
+
+                .app-feature {
+                    padding: 100px 0 100px 0;
+                    background: #f2f2f2;
+                }
+
+                .app-feature-content h1 {
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
+
+                .app-feature-content p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #7c7e80;
+                    line-height: 1.4;
+                    margin-bottom: 20px;
+                }
+
+                .flex-split .f-right img {
+                    margin-top: 0;
+                }
+
+                .flex-split .f-left  {
+                    padding: 0;
+                }
+
+                .flex-split .f-left h2 {
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 1.3;
+                    margin-top: 40px;
+                }
+
+                .flex-split .f-left  p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: #898989;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .flex-split .btn-action {
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                    color: #8696fb;
+                    background-color: #FFF;
+                    border-color: #FFF;
+                }
+
+
+                .section-r {
+                    padding: 100px 0 50px 0;
+                    background: #eef2f5;
+                }
+
+                .review-pitch {
+                    padding: 50px 10px 30px 10px;
+                }
+
+                .review-pitch h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
+
+                .review-pitch p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.4;
+                }
+
+                /*-------------- 8. Review Section Styling ------------*/
+
+                .review-section {
+                    padding: 0 0 0 0;
+                    box-shadow: 0px 5px 50px 0px rgba(0,0,0,.1);
+                    margin-bottom: 50px;
+                    border-radius: 10px;
+                }
+
+                .review-section .review-text {
+                    max-width: 75%;
+                    margin: 0 auto;
+                }
+
+                .review-section .review-text p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    letter-spacing: 0.5px;
+                    color: #627382;
+                    margin-bottom: 10px;
+                }
+
+                .review-section .review-text h3 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #364655;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                }
+
+                .review-section .review-text h4 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #364655;
+                }
+
+                .review-single {
+                    text-align: center;
+                    padding: 75px 0 75px 0;
+                }
+
+                .review-single img {
+                    width: 80px !important;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+
+                .review-text .ion {
+                    display: inline-block;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: #ff8000;
+                }
+
+                .owl-theme .owl-dots {
+                    display: none !important;
+                }
+
+                /*----------------------------------------------------------
+                  ------------------ 9. Cta Big Styling Starts ------------------
+                  ----------------------------------------------------------*/
+
+                .cta-big {
+                    background: url(../images/bg.jpg) no-repeat center center;
+                    background-size: cover;
+                    padding: 150px 0 150px 0;
+                }
+
+
+                .cta-big-inner h1 {
+                    font-weight: 500;
+                    font-size: 32px;
+                    color: #FFFFFF;
+                    line-height: 1.2;
+                }
+
+
+                .cta-big h4 {
+                    font-family: 'Open Sans';
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #FFF;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    letter-spacing: 2px;
+                    margin-bottom: 20px;
+                }
+
+
+                .cta-big-inner p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    line-height: 1.4;
+                    margin: 20px 0 0 0;
+                }
+
+
+
+                /*--------------------------------------------------
+                  ------------ 10. Pricing sm styling starts -------------
+                  ---------------------------------------------------*/
+
+                .pricing-sm {
+                    padding: 100px 0 100px 0;
+                }
+
+                .pricing-sm h1 {
+                    font-size: 34px;
+                    font-weight: 500;
+                    color: #364655;
+                    letter-spacing: -1px;
+                    margin-bottom: 50px;
+                }
+
+                .pricing-sm .plan {
+                    padding: 20px 0 20px 0;
+                }
+
+                .pricing-sm .plan h4 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #627382;
+                }
+
+                .pricing-sm .pricing-icon {
+                    padding: 30px 0 0 0;
+                }
+
+                .pricing-sm .price {
+                    font-size: 42px;
+                    font-family: 'Montserrat';
+                    margin: 30px 0 0 0;
+                    color: rgb(56, 126, 209);
+                }
+
+                .pricing-sm small {
+                    display: inline-block;
+                    font-family: 'Montserrat';
+                    font-size: 16px;
+                    margin: 10px 0 30px 0;
+                    color: rgb(56, 126, 209);
+                }
+
+                .pricing-sm .pricing-list {
+                    list-style-type: none;
+                }
+
+                .pricing-sm .pricing-list li {
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    line-height: 1.2;
+                    margin-bottom: 10px;
+                    color: #627382;
+                }
+
+                .pricing-sm .btn-action {
+                    background: rgb(56, 126, 209);
+                    border-color: rgb(56, 126, 209);
+                }
+
+
+
+                /* ----- Pricing Tables Styling Starts ----- */
+
+                .pricing-section {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    background: #FFFFFF;
+                }
+
+                .pricing-intro {
+                    padding-bottom: 30px;
+                }
+
+                .pricing-intro h1 {
+                    font-size: 28px;
+                    color: #364655;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    margin-bottom: 20px;
+                }
+
+                .pricing-intro p {
+                    font-size: 14px;
+                    color: #364655;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    letter-spacing: 1px;
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                }
+
+                .pricing-details {
+                    padding: 50px 0 0 0;
+                }
+
+                .pricing-section .table-left, .pricing-section .table-right {
+                    padding: 20px 20px 50px 20px;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    background-color: #FFFFFF;
+                    box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
+                    border: transparent;
+                    max-width: 400px;
+                }
+
+                .table-left .icon, .table-right .icon {
+                    padding: 50px 50px 40px 50px;
+                }
+
+                .table-left .icon img, .table-right .icon img {
+                    width: 60px;
+                    height: 60px;
+                    margin: 0 auto;
+                }
+
+                .table-left .pricing-details span, .table-right .pricing-details span {
+                    display: inline-block;
+                    font-family: 'Montserrat';
+                    font-size: 34px;
+                    font-weight: 400;
+                    color: #808080;
+                    margin-bottom: 20px;
+                }
+
+                .table-left .pricing-details h2, .table-right .pricing-details h2 {
+                    font-size: 21px;
+                    font-weight: 500;
+                    color: #505050;
+                    margin-bottom: 30px;
+                }
+
+                .table-left .pricing-details p, .table-right .pricing-details p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #505050;
+                    letter-spacing: 1px;
+                    line-height: 1.4;
+                }
+
+                .table-left .pricing-details ul, .table-right .pricing-details ul {
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                    padding: 0;
+                }
+
+                .table-left .pricing-details li, .table-right .pricing-details li {
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #505050;
+                    line-height: 1.4;
+                    margin-bottom: 10px;
+                }
+
+                .pricing-section .table-left:hover, .pricing-section .table-right:hover {
+                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    transition: 0.3s;
+                }
+
+                .pricing-section .table-left, .pricing-section .table-right {
+                    margin-top: 20px;
+                }
+
+                .pricing-section .table-center {
+                    margin-top: 0;
+                }
+
+                .btn-green {
+                    background-color: #46da60 !important;
+                    border-color: #46da60 !important;
+                }
+
+                .text-green {
+                    color: #46da60 !important;
+                }
+
+                .f-box {
+                    width: 100%;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    background: #eef2f5;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+
+                .f-box-single {
+                    background: #FFFFFF;
+                    padding: 2em 1em 2em 1em;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    border-radius: 5px;
+                    border: 1px solid rgba(0, 0, 0, .05);
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    transition: 0.3s;
+                }
+
+
+                .f-box-image {
+                    padding: 1em;
+                }
+
+                .f-box-image img {
+                    width: 60px;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    transition: 0.3s;
+                }
+
+                .f-box-single:hover {
+                    background: #FFF;
+                }
+
+                .f-box-content h3 {
+                    font-size: 18px;
+                    letter-spacing: 0;
+                    color: #364655;
+                    font-weight: 500;
+                }
+
+                .f-box-content p {
+                    font-size: 14px;
+                    color: #616771;
+                    line-height: 1.8;
+                    padding: 1.2em;
+                }
+
+                @media only screen and (min-width: 801px) and (max-width: 991px) {
+                    .f-box-single {
+                        padding: 1em;
+                    }
+                }
+
+                @media only screen and (max-width: 767px) {
+
+                    .home-4 {
+                        text-align: center;
+                    }
+
+                    .home-4 .app-content-block {
+                        margin-bottom: 30px;
+                    }
+
+                    .f-box-single {
+                        margin-bottom: 1em;
+                    }
+                }
+
+                @media only screen and (max-width:576px) {
+                    .navigation .container {
+                        margin: 0;
+                    }
+                }
+
+                .client-section {
+                    background-color: #eef2f5;
+                    padding: 25px 25px;
+                    border: 1px solid #eef2f5;
+                }
+
+                .ct-action {
+                    background: #FFFFFF;
+                    width: 100%;
+                    padding: 150px 0 150px 0;
+                }
+
+                .ct-action-inner h1 {
+                    font-size: 28px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    color: #252525;
+                    margin-bottom: 20px;
+                }
+
+                .ct-action-inner p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    color: #222222;
+                    margin-bottom: 20px;
+                }
+
+                .ct-action .subform {
+                    margin-top: 30px;
+                }
+
+                .faq {
+                    background: #FFFFFF;
+                    padding-top: 40px;
+                }
+
+                .faq .faq-intro h1 {
+                    font-size: 34px;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+
+                .faq h2 {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #364655;
+                    line-height: 1.4;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .faq p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    letter-spacing: 0.5px;
+                    color: #627382;
+                    margin-top: 30px;
+                    padding-bottom: 40px;
+                }
+
+                label {
+                    display: block;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #252525;
+                    text-align: left;
+                }
+
+                .text-muted {
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    color: #222222;
+                }
+
+                .text-muted strong {
+                    color: #FF3333;
+                }
+
+                .help-block {
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    color: #FF3333;
+                }
+
+                .justify-center {
+                    justify-content: center !important;
+                    display: flex;
+                }
+
+                .lbl-services {
+                    background: #eef2f5;
+                    padding: 100px 0 100px 0;
+                }
+
+                .service-intro {
+                    padding: 0 0 50px 0;
+                }
+
+                .service-intro h1 {
+                    font-size: 34px;
+                    font-weight: 300;
+                    line-height: 1.2;
+                }
+
+                .service-intro h6 {
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1.6;
+                    margin-top: 20px;
+                }
+
+                .lbl-service-card {
+                    text-align: center;
+
+
+                }
+                .card-icon {
+                    padding: 20px 0 5px 0;
+                }
+
+                .card-text {
+                    padding: 15px;
+                }
+
+                .card-text h1 {
+                    font-size: 21px;
+                    font-weight: 600;
+                    color: #49555f;
+                }
+
+                .card-text p {
+                    font-size: 14px;
+                    color: #70808D;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    margin-top: 15px;
+                }
+
+                @media only screen and (max-width: 42em) {
+                    .lbl-service-card {
+                        display: block !important;
+                    }
+                }
+
+                .footer {
+                    padding: 50px 0 50px 0;
+                    background: #2d2d86;
+                }
+
+                .footer h2 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                }
+
+                .footer p {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #364655;
+                    color: #FFF;
+                    letter-spacing: 0;
+                    line-height: 1.4;
+                    max-width: 320px;
+                    margin-bottom: 10px;
+                }
+
+                .right-align {
+                    text-align: right;
+                }
+
+                .footer .footer-nav {
+                    list-style-type: none;
+                    padding: 5px 0 5px 0;
+                }
+
+                .footer .footer-nav li {
+                    display: inline-block;
+                    margin-left: 10px;
+                    padding-top: 6px;
+                }
+
+                .footer .footer-nav li a {
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #364655;
+                    color: #D8D8D8;
+                    letter-spacing: 0;
+                    text-transform: capitalize;
+                }
+
+                .footer .social {
+                    list-style-type: none;
+                }
+
+                .footer .social li {
+                    display: inline;
+                }
+
+                .footer .f-mail {
+                    margin: 5px 5px 0 0;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    letter-spacing: 0;
+                    color: #fff;
+                    line-height: 1.6;
+                }
+
+                @media only screen and (min-width: 767px) {
+                .navbar-nav {
+                    margin-top: 0;
+                }
+
+                .navbar-nav .nav-item {
+                    margin-top: 0;
+                    margin-right: 15px;
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                }
+
+                .hero-split .hero-left {
+                    padding: 200px 20px 150px 20px;
+                }
+
+                .home-2 {
+                    padding: 150px 0 150px 0 !important;
+                }
+
+                .home-2 .col-sm-5 {
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 50%;
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+
+                .home-4 .col-sm-5 {
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 50%;
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+
+                .about-txt-inner {
+                    padding: 50px 0 50px 0;
+                    margin-top: 50px;
+                }
+
+                .features {
+                    padding: 75px 0 75px 0;
+                }
+
+                .flex-split {
+                    padding: 50px 0 50px 0;
+                }
+
+                .features .col-sm-5, .app-feature .col-sm-5, .flex-split .col-sm-5 {
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 41.666667%;
+                    -ms-flex: 0 0 41.666667%;
+                    flex: 0 0 41.666667%;
+                    max-width: 41.666667%;
+                }
+
+                .features .col-sm-7, .app-feature .col-sm-7, .flex-split .col-sm-7 {
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 58.333333%;
+                    -ms-flex: 0 0 58.333333%;
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%;
+                }
+
+                .features .feature-img {
+                    margin-bottom: 0;
+                }
+
+                .product-tour .tour-intro {
+                    padding: 0;
+                }
+
+                .product-tour .tour-img {
+                    transform: translateX(120px);
+                }
+
+                .home-3 {
+                    text-align: left;
+                }
+
+                .home-3 h4 {
+                    font-size: 14px;
+                }
+
+                .home-3 h1 {
+                    font-size: 28px;
+                }
+
+                .home-3 .intro-block {
+                    padding: 0 0 0 0;
+                }
+
+                .home-3 .hero-inner img {
+                    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+                    margin-top: 0;
+                }
+
+                .home-4 {
+                    padding: 150px 0 100px 0;
+                }
+
+                .product-tour .tour-img {
+                    transform: translateX(0);
+                    max-width: 100%;
+                }
+
+                .about-intro h1 {
+                    font-size: 34px;
+                }
+
+                .flex-split .f-left h2 {
+                    font-size: 28px;
+                }
+
+                .clients img {
+                    width: 80px;
+                    opacity: 0.5;
+                    position:relative;
+                }
+
+                .clients img:hover {
+                    opacity: 1.0;
+                }
+
+                .review-section ul {
+                    padding: 50px 50px 25px 50px;
+                    margin-top: 30px;
+                }
+
+                .review-section .review-img {
+                    float: left;
+                    width: 18%;
+                }
+
+                .cta-big-inner h1 {
+                    font-size: 42px;
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                .home-2 img {
+                    margin-top: 0;
+                }
+                .home-2 .hero-content {
+                    text-align: left;
+                }
+                .home-4 {
+                    padding: 100px 0 100px 0;
+                }
+
+                .hero-split {
+                    -webkit-flex-direction: row;
+                    flex-direction: row;
+                }
+
+                .hero-split .hero-left {
+                    order: 1;
+                }
+
+                .hero-split .hero-right {
+                    margin: 0;
+                    order: 2;
+                }
+
+                .home-4 .app-content-block h1 {
+                    font-size: 34px;
+                }
+
+                .product-tour .tour-intro h1 {
+                    font-size: 28px;
+                }
+
+                .product-tour .tour-img {
+                    max-width: 100%;
+                }
+
+                .home-3 .hero-inner img {
+                    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+                }
+
+                .home-3 .intro-block {
+                    padding: 0 0 0 0;
+                }
+
+                .home-3 h4 {
+                    font-size: 14px;
+                }
+
+                .home-3 h1 {
+                    font-size: 34px;
+                }
+
+                .hero-split .hero-left {
+                    padding: 200px 80px 150px 80px;
+                    text-align: left;
+                }
+
+                .counter-section {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media only screen and (min-width: 1025px) {
+                #email-error {
+                    left: 38%;
+                }
+            }
+
+            @media only screen and (max-width: 766px) {
+                .product-tour .tour-img {
+                    transform: translateX(0);
+                    max-width: 100%;
+                }
+
+                #email-error {
+                    left: 25%;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="wrapper">
@@ -28,11 +1531,10 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto navbar-right">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#services">Features</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                                <li class="nav-item"><a class="nav-link btn btn-action m-0 text-light">Get Started</a></li>
+                                <li class="nav-item"><a class="typeform-share button btn btn-action m-0 text-light" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,15 +1546,15 @@
                     <div class="hero-inner">
                         <div class="container">
                             <div class="row align-center">
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <div class="intro-block">
                                         <h4>Server Early Warning System</h4>
-                                        <h1>Monitor your servers from a dashboard</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id viverra velit. Nulla sed tempor augue. Aenean non massa ex. Mauris pellentesque finibus nulla eu blandit.</p>
-                                        <a href="#" class="btn btn-action">Get Started</a>
+                                        <h1>Easy server monitoring</h1>
+                                        <p>Monitor your server for anomalies and get alerts instantly.</p>
+                                        <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
                                     </div>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-7">
                                     <img src="assets/images/hero.png" alt="Hero Image">
                                 </div>
                             </div>
@@ -81,7 +1583,7 @@
                                     </div>
                                     <div class="f-box-content">
                                         <h3>2. Log in to the dashboard</h3>
-                                        <p>The dashboard is accessible at any time, supporting both desktop and mobile.</p>
+                                        <p>The monitoring dashboard is accessible at any time, supporting both desktop and mobile.</p>
                                     </div>
                                 </div>
                             </div>
@@ -103,6 +1605,19 @@
                 <div id="features" class="features">
                     <div class="container">
                         <div class="row align-center">
+                            <div class="col-md-4">
+                                <div class="feature-content">
+                                    <h2>Keep an eye on your key metrics</h2>
+                                    <p>With metrics such as CPU, RAM and disk usage recorded alongside web server performance stats, you'll get a good overview of your system.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="feature-img p-2 shadow-sm">
+                                    <img class="img-fluid" src="assets/images/f2.png" alt="Feature">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-center mt-5">
                             <div class="col-md-8">
                                 <div class="feature-img p-2 shadow-sm">
                                     <img class="img-fluid" src="assets/images/f1.png" alt="Feature">
@@ -110,35 +1625,15 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="feature-content">
-                                    <h2>Monitor this thing</h2>
-                                    <p>Why you should monitor this thing</p>
+                                    <h2>Get alerts when anomalies happen</h2>
+                                    <p>Our alerting system gives email, Telegram and SMS notifications.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex-split">
-                    <div class="container">
-                        <div class="row align-center">
-                            <div class="col-md-4">
-                                <div class="f-left">
-                                    <div class="left-content">
-                                        <h2>Monitor that thing</h2>
-                                        <p>Why you should monitor that thing</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="f-right p-2 shadow-sm">
-                                    <img class="img-fluid" src="assets/images/f2.png" alt="Feature">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="services" class="lbl-services">
+                <!--<div id="services" class="lbl-services">
                     <div class="container">
                         <div class="row justify-center">
                             <div class="col-md-8">
@@ -184,9 +1679,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
-                <div id="pricing" class="pricing-section text-center">
+                <div id="pricing" class="pricing-section f-box text-center">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -204,7 +1699,7 @@
                                                     <li>Event alerts</li>
                                                     <li>Dashboard access at any time</li>
                                                 </ul>
-                                                <button class="btn btn-primary btn-action" type="button">Get Started</button>
+                                                <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
                                             </div>
                                         </div>
                                     </div>
@@ -218,7 +1713,7 @@
                                                     <li>We fix the problems</li>
                                                     <li>Monthly reports</li>
                                                 </ul>
-                                                <button class="btn btn-primary btn-action btn-green" type="button">Get Started</button>
+                                                <a class="typeform-share button btn btn-action btn-green" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
                                             </div>
                                         </div>
                                     </div>
@@ -252,17 +1747,15 @@
                 <div id="faq" class="faq">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-12">
-                                <div class="faq-intro">
-                                    <div class="text-center">
-                                        <h1>Frequently asked questions</h1>
-                                        <p>Send us a message if your question isn't listed. We'll get back to you within 24 hours.</p>
-                                    </div>
-                                    <h2>Is my data still secure?</h2>
-                                    <p>SEWS only collects the boring system statistics. We do not download any of your data. We may parse application logs, such as those given by Nginx &amp; PHP, in order to deliver more insight.</p>
-                                    <h2>Can't I just set this up myself?</h2>
-                                    <p>Yes. We use a range of freely-available open source technologies to power the service, but it would require you to set up even more servers and software. Instead of wasting time on that, leave it to us.</p>
+                            <div class="faq-intro">
+                                <div class="text-center">
+                                    <h1>Frequently asked questions</h1>
+                                    <p><a href="mailto:hi@sewsapp.com">Send us a message</a> if your question isn't listed. We'll get back to you within 24 hours.</p>
                                 </div>
+                                <h2>Is my data still secure?</h2>
+                                <p>SEWS only collects the boring system statistics. We do not download any of your data. We may parse application logs, such as those given by Nginx &amp; PHP, in order to deliver more insight.</p>
+                                <h2>Can't I just set this up myself?</h2>
+                                <p>Yes. We use a range of freely-available open source technologies to power the service, but it would require you to set up even more servers and software. Instead of wasting time on that, leave it to us.</p>
                             </div>
                         </div>
                     </div>
@@ -286,5 +1779,6 @@
                 </div>
             </div>
         </div>
+        <script>(function(){var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>
     </body>
 </html>
