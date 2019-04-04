@@ -12,259 +12,9 @@
         <link rel="shortcut icon" href="https://twemoji.maxcdn.com/2/72x72/2699.png" type="image/x-icon" />
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-        <!--       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
         <style>
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_cJD3gTD_u50.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_cJD3g3D_u50.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_cJD3gbD_u50.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gTD_u50.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3g3D_u50.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gbD_u50.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* hebrew */
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfqMuPP9g.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfqcuPP9g.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-
             h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat'; font-size: 16px; }
             p { font-family: 'Montserrat';font-size: 14px}
 
@@ -312,25 +62,6 @@
                 background-color: #F2F2F2;
                 z-index: 9999;
                 text-align: center;
-            }
-
-            #loading-image {
-                display: inline;
-                top: 40%;
-                position: relative;
-                z-index: 9999;
-            }
-
-            .error-message {
-                color: #FF3333;
-                font-family: "Montserrat";
-                margin-top: 5px;
-            }
-
-            .success-message {
-                color:#33cc33;
-                font-family: "Montserrat";
-                margin-top: 5px;
             }
 
             .navbar {
@@ -593,16 +324,6 @@
                     line-height: 1.4;
                     max-width: 80%;
                     margin: 0 auto;
-                }
-
-                .boxed-blue {
-                    background: #387ed1;
-                    color: #FFFFFF !important;
-                }
-
-                .boxed-blue p {
-                    color: #FFFFFF !important;
-                    opacity: 0.9;
                 }
 
                 .flex-split .f-right img {
@@ -1133,18 +854,6 @@
                     margin-bottom: 0;
                 }
             }
-
-            @media only screen and (min-width: 1025px) {
-                #email-error {
-                    left: 38%;
-                }
-            }
-
-            @media only screen and (max-width: 766px) {
-                #email-error {
-                    left: 25%;
-                }
-            }
         </style>
     </head>
     <body>
@@ -1168,196 +877,25 @@
                 </nav>
             </div>
 
-            <div id="main" class="main">
-                <div class="home-3 features">
-                    <div class="hero-inner">
-                        <div class="container">
-                            <div class="row align-center">
-                                <div class="col-md-5">
-                                    <div class="intro-block">
-                                        <h4>Server Early Warning System</h4>
-                                        <h1>Easy server monitoring</h1>
-                                        <p>Monitor your server for anomalies and get alerts instantly.</p>
-                                        <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/images/hero.png" alt="Hero Image">
-                                </div>
-                            </div>
+            {{ content }}
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>SEWS</h2>
+                            <p>Easy server monitoring</p>
+                            <p>&copy; 2019 Lockyer Ventures Ltd.</p>
+                            <a class="f-mail" href="mailto:hi@sewsapp.com">hi@sewsapp.com</a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="f-box">
-                    <div class="container">
-                        <div class="row text-center">
-                            <div class="col-md-4">
-                                <div class="f-box-single shadow-sm">
-                                    <div class="f-box-image">
-                                        <i class="fas fa-6x fa-download"></i>
-                                    </div>
-                                    <div class="f-box-content">
-                                        <h3>1. We install our software</h3>
-                                        <p>The data collector uses minimal system resources and transmits all the data we need.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="f-box-single shadow-sm">
-                                    <div class="f-box-image">
-                                        <i class="fas fa-6x fa-mobile-alt"></i>
-                                    </div>
-                                    <div class="f-box-content">
-                                        <h3>2. Log in to the dashboard</h3>
-                                        <p>The monitoring dashboard is accessible at any time, supporting both desktop and mobile.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="f-box-single shadow-sm">
-                                    <div class="f-box-image">
-                                        <i class="far fa-6x fa-smile"></i>
-                                    </div>
-                                    <div class="f-box-content">
-                                        <h3>3. Sit back and relax</h3>
-                                        <p>You will receive alerts when something needs attending to.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="features" class="features">
-                    <div class="container">
-                        <div class="row align-center">
-                            <div class="col-md-4">
-                                <div class="feature-content">
-                                    <h2>Keep an eye on your key metrics</h2>
-                                    <p>With CPU, RAM and disk usage recorded alongside web server performance statistics, you'll get a good overview of your system.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="feature-img p-2 shadow-sm">
-                                    <img class="img-fluid" src="assets/images/f2.png" alt="Feature">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-center mt-5">
-                            <div class="col-md-8">
-                                <div class="feature-img p-2 shadow-sm">
-                                    <img class="img-fluid" src="assets/images/f1.png" alt="Feature">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-content">
-                                    <h2>Get alerts when anomalies happen</h2>
-                                    <p>Our alerting system gives email, Telegram and SMS notifications.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="pricing" class="pricing-section f-box text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="pricing-intro">
-                                    <h1>Our Pricing Plans</h1>
-                                </div>
-                                <div class="row">
-                                     <div class="col-md-4">
-                                        <div class="table-left">
-                                            <div class="pricing-details">
-                                                <h2>Enterprise</h2>
-                                                <span>$499 / month</span>
-                                                <ul>
-                                                    <li>Up to <b>100</b> servers</li>
-                                                    <li>Priority email support</li>
-                                                </ul>
-                                                <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="table-right table-center">
-                                            <div class="pricing-details">
-                                                <h2>Professional</h2>
-                                                <span class="text-green">$299 / month</span>
-                                                <ul>
-                                                    <li>Up to <b>50</b> servers</li>
-                                                    <li>Email support</li>
-                                                </ul>
-                                                <a class="typeform-share button btn btn-action btn-green" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="table-right">
-                                            <div class="pricing-details">
-                                                <h2>Starter</h2>
-                                                <span>$99 / month</span>
-                                                <ul>
-                                                    <li>Up to <b>10</b> servers</li>
-                                                    <li>Email support</li>
-                                                </ul>
-                                                <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <p class="text-center">More than 100 servers? <a href="mailto:hi@sewsapp.com">Contact us</a> for a quote.</p>
-                    </div>
-                </div>
-
-                <div id="clients" class="container text-center">
-                    <h1>Trusted by:</h1>
-                    <div class="clients p-4">
-                        <a href="https://nomadlist.com"><img src="/assets/images/logo-nl.png" width="80" alt="Client" /></a>
-                        &nbsp;
-                        <a href="https://remoteok.io"><img src="/assets/images/logo-ro.webp" width="80" alt="Client" /></a>
-                    </div>
-                </div>
-
-                <div id="faq" class="faq">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="faq-intro">
-                                    <div class="text-center">
-                                        <h1>Frequently asked questions</h1>
-                                        <p><a href="mailto:hi@sewsapp.com">Send us a message</a> if your question isn't listed. We'll get back to you within 24 hours.</p>
-                                    </div>
-                                    <h2>Is my data still secure?</h2>
-                                    <p>SEWS only collects the boring system statistics. We do not download any of your data. We may parse application logs, such as those given by Nginx &amp; PHP, in order to deliver more insight.</p>
-                                    <h2>Can't I just set this up myself?</h2>
-                                    <p>Yes. We use a range of freely-available open source technologies to power the service, but it would require you to set up even more servers and software. Instead of wasting time on that, leave it to us.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2>SEWS</h2>
-                                <p>Easy server monitoring</p>
-                                <p>&copy; 2019 Lockyer Ventures Ltd.</p>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <a class="f-mail" href="mailto:hi@sewsapp.com">Contact</a>
-                                <br/>
-                                <a class="f-mail" href="mailto:hi@sewsapp.com">hi@sewsapp.com</a>
-                            </div>
+                        <div class="col-md-6 text-right">
+                            <a class="f-mail" href="/#services">Features</a>
+                            <br/>
+                            <a class="f-mail" href="/#pricing">Pricing</a>
+                            <br/>
+                            <a class="f-mail" href="/#faq">FAQ</a>
+                            <br/>
+                            <a class="f-mail" href="mailto:hi@sewsapp.com">Contact</a>
                         </div>
                     </div>
                 </div>
