@@ -106,7 +106,7 @@ image: /assets/images/hero.png
                             <div class="table-left">
                                 <div class="pricing-details">
                                     <h2>Enterprise</h2>
-                                    <span>$499 / month</span>
+                                    <span>$599 / month</span>
                                     <ul>
                                         <li>Up to <b>100</b> servers</li>
                                         <li>Priority email support</li>
@@ -120,7 +120,7 @@ image: /assets/images/hero.png
                             <div class="table-right table-center">
                                 <div class="pricing-details">
                                     <h2>Professional</h2>
-                                    <span class="text-green">$299 / month</span>
+                                    <span class="text-green">$399 / month</span>
                                     <ul>
                                         <li>Up to <b>50</b> servers</li>
                                         <li>Email support</li>
