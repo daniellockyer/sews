@@ -51,18 +51,6 @@
                 background: #f8faff !important;
             }
 
-            #loading {
-                width: 100%;
-                height: 100%;
-                top: 0px;
-                left: 0px;
-                position: fixed;
-                opacity: 1;
-                background-color: #F2F2F2;
-                z-index: 9999;
-                text-align: center;
-            }
-
             .navbar {
                 font-family: "Montserrat";
                 padding-top: 25px;
@@ -111,41 +99,16 @@
                 font-weight: 500;
             }
 
-            .nav-white .nav-item .nav-link {
-                font-size: 0.9rem;
-                text-transform: capitalize;
-                color: #FFFFFF;
-            }
-
-            .nav-white .nav-item .nav-link:hover {
-                color: #F1F1F1;
-            }
-
-            .nav-white .navbar-brand {
-                color: #FFFFFF;
-            }
-
             @media only screen and (max-width: 768px) {
                 .navbar {
                     background: rgba(255, 255, 255, 0.99) !important;
                     padding-top: 10px;
                     padding-bottom: 10px;
                 }
-                .nav-white .navbar-brand {
-                    color: #4957B8;
-                }
-                .nav-white .nav-item .nav-link {
-                    color: #4957B8;
-                }
             }
 
             @media only screen and (min-width: 240px) {
                 .navbar.effect-main {
-                    -webkit-transition: all 0.3s;
-                    transition: all 0.3s;
-                }
-
-                .nav-white.effect-main {
                     -webkit-transition: all 0.3s;
                     transition: all 0.3s;
                 }
@@ -364,7 +327,7 @@
                 }
 
                 .pricing-details {
-                    padding: 50px 0 0 0;
+                    padding-top: 50px;
                 }
 
                 .pricing-section .table-left, .pricing-section .table-right {
@@ -414,7 +377,6 @@
                 .table-left .pricing-details ul, .table-right .pricing-details ul {
                     margin-top: 30px;
                     margin-bottom: 50px;
-                    padding: 0;
                 }
 
                 .table-left .pricing-details li, .table-right .pricing-details li {
@@ -621,48 +583,8 @@
                     padding: 100px 0 100px 0;
                 }
 
-                .service-intro {
-                    padding: 0 0 50px 0;
-                }
-
-                .service-intro h1 {
-                    font-size: 34px;
-                    font-weight: 300;
-                    line-height: 1.2;
-                }
-
-                .service-intro h6 {
-                    font-size: 16px;
-                    font-weight: 300;
-                    line-height: 1.6;
-                    margin-top: 20px;
-                }
-
                 .lbl-service-card {
                     text-align: center;
-
-
-                }
-                .card-icon {
-                    padding: 20px 0 5px 0;
-                }
-
-                .card-text {
-                    padding: 15px;
-                }
-
-                .card-text h1 {
-                    font-size: 21px;
-                    font-weight: 600;
-                    color: #49555f;
-                }
-
-                .card-text p {
-                    font-size: 14px;
-                    color: #70808D;
-                    font-weight: 400;
-                    line-height: 1.6;
-                    margin-top: 15px;
                 }
 
                 @media only screen and (max-width: 42em) {
