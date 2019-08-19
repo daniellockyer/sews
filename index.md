@@ -158,6 +158,8 @@ image: /assets/images/hero.png
             <a href="https://nomadlist.com"><img src="/assets/images/logo-nl.png" width="80" alt="Client" /></a>
             &nbsp;
             <a href="https://remoteok.io"><img src="/assets/images/logo-ro.png" width="80" alt="Client" /></a>
+            &nbsp;
+            <a href="https://www.indietraveller.co/"><img src="/assets/images/logo-it.png" alt="Client" /></a>
         </div>
     </div>
 
