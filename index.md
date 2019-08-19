@@ -157,7 +157,7 @@ image: /assets/images/hero.png
         <div class="clients p-4">
             <a href="https://nomadlist.com"><img src="/assets/images/logo-nl.png" width="80" alt="Client" /></a>
             &nbsp;
-            <a href="https://remoteok.io"><img src="/assets/images/logo-ro.webp" width="80" alt="Client" /></a>
+            <a href="https://remoteok.io"><img src="/assets/images/logo-ro.png" width="80" alt="Client" /></a>
         </div>
     </div>
 
