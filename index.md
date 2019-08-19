@@ -108,7 +108,7 @@ image: /assets/images/hero.png
                                     <h2>Enterprise</h2>
                                     <span>$599 / month</span>
                                     <ul>
-                                        <li>Up to <b>100</b> servers</li>
+                                        <li>Up to <b>50</b> servers</li>
                                         <li>Priority email support</li>
                                     </ul>
                                     <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
@@ -122,7 +122,7 @@ image: /assets/images/hero.png
                                     <h2>Professional</h2>
                                     <span class="text-green">$399 / month</span>
                                     <ul>
-                                        <li>Up to <b>50</b> servers</li>
+                                        <li>Up to <b>10</b> servers</li>
                                         <li>Email support</li>
                                     </ul>
                                     <a class="typeform-share button btn btn-action btn-green" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
@@ -135,7 +135,8 @@ image: /assets/images/hero.png
                                     <h2>Starter</h2>
                                     <span>$99 / month</span>
                                     <ul>
-                                        <li>Up to <b>10</b> servers</li>
+                                        <li>Up to <b>1</b> server</li>
+                                        <li>Monthly software updates</li>
                                         <li>Email support</li>
                                     </ul>
                                     <a class="typeform-share button btn btn-action" href="https://daniellockyer.typeform.com/to/pCVbBZ" data-mode="popup" data-submit-close-delay="5" target="_blank">Get started</a>
@@ -147,7 +148,7 @@ image: /assets/images/hero.png
             </div>
         </div>
         <div class="container">
-            <p class="text-center">More than 100 servers? <a href="mailto:hi@sewsapp.com">Contact us</a> for a quote.</p>
+            <p class="text-center">More than 50 servers? <a href="mailto:hi@sewsapp.com">Contact us</a> for a quote.</p>
         </div>
     </div>
 
